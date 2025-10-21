@@ -1,0 +1,93 @@
+@import url('https://fonts.cdnfonts.com/css/roslindale');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    display: none; 
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roslindale';
+    font-weight: 600;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1{
+    width: 100%;
+    color: white;
+    font-size: 48vw;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 20vw;
+}
+
+.container{
+    width: 100%;
+    height: 1200vh;
+}
+
+.wrapper{
+    position: absolute;
+    top: 0;
+    width: 400vw;
+    height: 100vh;
+    will-change: transform;
+}
+
+.card{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+    overflow: hidden;
+    will-change: transform;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+
+
+#card-1{
+    top: 42%;
+    left: 14%;
+}
+
+#card-2{
+    top: 25%;
+    left: 28%;
+}
+
+#card-3{
+    top: 45%;
+    left: 42%;
+}
+
+#card-4{
+    top: 30%;
+    left: 57%;
+}
+
+#card-5{
+    top: 65%;
+    left: 67%;
+}
+
+
+@media (max-width:900px){
+    .wrapper{
+        padding-top: 20em;
+    }
+}
